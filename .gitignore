@@ -205,3 +205,18 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# AWS Elastic Beanstalk files
+.elasticbeanstalk/*
+!/.elasticbeanstalk/config.yml
+!/.elasticbeanstalk/cb_config.yml
+
+# Python virtual environments
+.venv/
+bin/
+include/
+lib/
+share/
+
+# Sensitive AWS credentials (if you created a local file)
+.aws/
