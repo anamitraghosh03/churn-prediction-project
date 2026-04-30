@@ -4,7 +4,8 @@
 import requests
 
 # %%
-url = 'http://localhost:9696/predict'
+host = 'churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com'
+url = f'http://{host}/predict'
 
 # %%
 customer = {
@@ -24,9 +25,9 @@ customer = {
     "contract": "month-to-month",
     "paperlessbilling": "yes",
     "paymentmethod": "electronic_check",
-    "tenure": 12,
+    "tenure": 1,
     "monthlycharges": 29.85,
-    "totalcharges": (12*29.85)
+    "totalcharges": (1*29.85)
 }
 
 # %%
