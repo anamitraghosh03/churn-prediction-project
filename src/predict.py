@@ -16,6 +16,10 @@ dv, model
 
 app = Flask('churn')
 
+@app.route('/', methods=['GET'])
+def health():
+    return jsonify({'status': 'ok', 'message': 'Churn predictor running'}), 200
+
 @app.route('/predict', methods = ['POST'])
 def predict():
     customer = request.get_json()
