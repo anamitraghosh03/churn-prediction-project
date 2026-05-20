@@ -37,12 +37,15 @@ http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com
 
 ## 🚀 API Usage
 
-### Predict Churn
+### Health Check
+Open in browser:
+```
+http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com
+```
 
-**Endpoint:** `POST /predict`
+### Get a Churn Prediction
 
-**Request:**
-
+**Using curl:**
 ```bash
 curl -X POST http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com/predict \
   -H "Content-Type: application/json" \
@@ -51,6 +54,19 @@ curl -X POST http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.c
     "tenure": 12,
     "monthlycharges": 19.9
   }'
+```
+
+**Using Postman:**
+- Method: `POST`
+- URL: `http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com/predict`
+- Body: `raw` → `JSON`
+- Paste:
+```json
+{
+  "contract": "two_year",
+  "tenure": 12,
+  "monthlycharges": 19.9
+}
 ```
 
 **Response:**
