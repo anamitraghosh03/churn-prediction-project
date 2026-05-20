@@ -24,18 +24,16 @@ http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com/predict
 - **Dependency Management:** Pipenv
 
 ## 📁 Project Structure
-
-churn-prediction-project/
-│
-├── src/
-│   └── predict.py        # Flask REST API
-├── notebooks/            # EDA and training notebooks
-├── data/                 # Dataset
-├── model_C=1.0.bin       # Serialized model + DictVectorizer
-├── train.py              # Model training script
-├── Dockerfile
-├── Pipfile
-└── README.md
+    churn-prediction-project/
+    ├── src/
+    │   └── predict.py        # Flask REST API
+    ├── notebooks/            # EDA and training notebooks
+    ├── data/                 # Dataset
+    ├── model_C=1.0.bin       # Serialized model + DictVectorizer
+    ├── train.py              # Model training script
+    ├── Dockerfile
+    ├── Pipfile
+    └── README.md
 
 ## 🚀 API Usage
 
