@@ -4,7 +4,7 @@ An end-to-end machine learning system that predicts customer churn probability u
 
 ## 🔗 Live API
 
-http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com/predict
+http://churn-serving-env.eba-cfuqxid3.eu-north-1.elasticbeanstalk.com
 
 ## 📊 Model Performance
 
